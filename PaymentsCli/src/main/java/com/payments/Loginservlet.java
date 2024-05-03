@@ -26,14 +26,14 @@ public class Loginservlet extends HttpServlet {
 		paymentsDAO pd=new paymentsDAO();
 		if(pd.validlogin(phonenumber, password))
 		{
-			RequestDispatcher rd=request.getRequestDispatcher("/dashboard.html");
+			RequestDispatcher rd=request.getRequestDispatcher("/dashboard.jsp");
 			rd.forward(request, response);
 		}
 		else
 		{
 			response.getWriter().write("invalid");
 			response.setContentType("text/html");
-			RequestDispatcher rd=request.getRequestDispatcher("/login.html");
+			RequestDispatcher rd=request.getRequestDispatcher("/login.jsp");
 			rd.include(request, response);
 		}
 	}

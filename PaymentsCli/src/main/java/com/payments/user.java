@@ -1,5 +1,7 @@
 package com.payments;
 
+import java.sql.Date;
+
 public class user {
 	
 	String PhoneNumber;
@@ -32,6 +34,7 @@ public class user {
 	public void setLastName(String lastName) {
 		LastName = lastName;
 	}
+	
 	public String getDateofBirth() {
 		return DateofBirth;
 	}
@@ -44,6 +47,4 @@ public class user {
 	public void setPassword(String password) {
 		Password = password;
 	}
-	
-
 }
